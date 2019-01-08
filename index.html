@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Average Calc</title>
+        <meta name="description" content="A simple calculator to calculate various averages">
+        <meta name="author" content="Vamsi">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+        <script src="scripts/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                Average Calc
+            </h1>
+            <form>
+                <div class="row">
+                    <span id="error-container"></span>
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="actualUnitPriceInput">Price (actual)</label>
+                        <input id="actualUnitPriceInput" type="number" class="u-full-width input-for-actual">
+                    </div>
+                    <div class="four columns">
+                        <label for="actualQuantityInput">Quantity (actual)</label>
+                        <input id="actualQuantityInput" type="number" class="u-full-width input-for-actual">
+                    </div>                    
+                    <div class="four columns">
+                        <label for="actualTotalAmountInput">
+                            Total (actual)
+                            <span class="value-change" id="actualTotalPriceExpectedChange"></span>
+                        </label>
+                        <input id="actualTotalAmountInput" readonly type="number" class="u-full-width">
+                    </div>                
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="expectedUnitPriceInput">
+                            Price (expected)
+                            <span class="value-change percentage-change" id="expectedUnitPriceChange"></span>
+                        </label>
+                        <input id="expectedUnitPriceInput" type="number" class="u-full-width input-for-expected">
+                    </div>
+                    <div class="four columns">
+                        <label for="expectedQuantityInput">Quantity (expected)</label>
+                        <input id="expectedQuantityInput" type="number" class="u-full-width input-for-expected">
+                    </div>                        
+                    <div class="four columns">
+                        <label for="expectedTotalAmountInput">Total (expected)</label>
+                        <input id="expectedTotalAmountInput" readonly type="number" class="u-full-width">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="expectedAveragePriceInput">
+                            Average price (final)
+                            <span class="value-change percentage-change" id="expectedAveragePriceChange"></span>
+                        </label>
+                        <input id="expectedAveragePriceInput" type="number" class="u-full-width input-for-expected">
+                    </div>
+                    <div class="four columns">
+                        <label for="expectedFinalQuantityInput">Quantity (final)</label>
+                        <input id="expectedFinalQuantityInput" readonly type="number" class="u-full-width">
+                    </div>
+                    <div class="four columns">
+                        <label for="expectedFinalAmountInput">Total (final)</label>
+                        <input id="expectedFinalAmountInput" readonly type="number" class="u-full-width">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="u-full-width">
+                        Note : all values are <b>rounded up</b> with maximum 2 decimal points.
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,24 @@
+.value-change{
+    padding-left: 2%;
+    padding-right: 2%;
+     display: none;
+    border: 1px dashed rgb(128, 128, 128);
+    background-color:  rgb(240, 240, 240);
+}
+
+span.value-change-green
+{
+   display: inline-block;
+   background-color:  rgb(200, 255, 200);
+}
+
+span.value-change-red
+{
+   display: inline-block;
+   background-color:  rgb(255, 200, 200);
+}
+
+span.percentage-change::after
+{
+    content: "%"
+}
